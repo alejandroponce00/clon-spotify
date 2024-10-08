@@ -1,6 +1,6 @@
-# 🎵 Spotify Clone
+# 🎵  Clon de Spotify
 
-![Spotify Clone](./demo-screenshot.png)
+
 
 Clon de Spotify construido con **Next.js** y **Shadcn**. 🚀
 
