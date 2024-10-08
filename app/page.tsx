@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -7,7 +8,14 @@ export default function Home() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {[1, 2, 3, 4, 5, 6].map((i) => (
           <div key={i} className="bg-spotify-lightBlack p-4 rounded-lg hover:bg-spotify-darkGray transition-colors">
-            <div className="w-full aspect-square bg-spotify-darkGray mb-4 rounded-md"></div>
+            
+            <div className="w-full aspect-square bg-spotify-darkGray mb-4 rounded-md">
+            <Image
+      src="/spotify-icono.png"
+      width={200}
+      height={200}
+      alt="Picture of the author"
+    /></div>
             <h3 className="font-semibold mb-1">Playlist {i}</h3>
             <p className="text-sm text-spotify-darkGray">Artist Name</p>
           </div>
